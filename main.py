@@ -5,7 +5,7 @@ import requests
 import shutil, os, easyocr
 
 app = Flask(__name__)
-atext = easyocr.Reader(['en'])
+atext = easyocr.Reader(['ch_sim','en'])
 
 @app.route('/')
 def index():
