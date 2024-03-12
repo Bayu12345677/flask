@@ -1,4 +1,5 @@
 Flask==2.2.5
+flask-cors
 requests
 Pillow==10.2.0
 gunicorn==20.0.4
