@@ -3,7 +3,5 @@ requests
 Pillow==10.2.0
 gunicorn==20.0.4
 itsdangerous>=1.1.0
-MarkupSafe==1.1.1
-Werkzeug==2.3.8
 itsdangerous>=2.0
 easyocr==1.7.1
