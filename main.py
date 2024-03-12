@@ -22,7 +22,7 @@ def ocr_bypasses():
       shutil.copyfileobj(img, out_file)
     """
     os.system(f"curl -sL {url} -o img.jpeg")
-    atext = easyocr.Reader(['en'])
+    atext = easyocr.Reader(['en'], gpu = False)
     text = atext.readtext('img.jpeg')
     return jsonify({'url':text,'result':text})
     # return jsonify({'result':url})
