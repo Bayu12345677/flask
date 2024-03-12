@@ -18,8 +18,10 @@ This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a
 
 - Python
 - Flask
-
+- bypass ocr
+  
 ## 💁‍♀️ How to use
 
 - Install Python requirements `pip install -r requirements.txt`
 - Start the server for development `python3 main.py`
+- example: `https://example.com/ocr_bypasses | POST | data = {'url':<url_capcha_image>}`
