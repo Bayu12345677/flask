@@ -5,7 +5,8 @@ import requests
 import shutil, os, easyocr
 
 app = Flask(__name__)
-  
+atext = easyocr.Reader(['en'])
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -22,12 +23,11 @@ def ocr_bypasses():
       shutil.copyfileobj(img, out_file)
     """
     os.system(f"curl -sL {url} -o img.jpeg")
-    atext = easyocr.Reader(['en'], gpu = True)
     text = atext.readtext('img.jpeg')
-    return jsonify({'url':text,'result':text})
+    return(str(text))
     # return jsonify({'result':url})
   else:
-    return 'Error'
+    return('Error')
 
 if __name__ == '__main__':
     app.run(debug=True, port=os.getenv("PORT", default=5000))
