@@ -1,9 +1,11 @@
 ---
+author: Bayu Rizki A.M
 title: Flask
-description: A popular minimal server framework for Python
+description: API BYPASS OCR IMAGE
 tags:
   - python
   - flask
+  - easyocr
 ---
 
 # Python Flask Example
