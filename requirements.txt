@@ -2,7 +2,7 @@ Flask==2.2.5
 flask-cors
 requests
 Pillow==10.3.0
-gunicorn==20.0.4
+gunicorn==22.0.0
 itsdangerous>=1.1.0
 itsdangerous>=2.0
 easyocr==1.7.1
